@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="scrollbar-hide">
+    <html lang="ko" className="scrollbar-hide overflow-x-hidden">
       <body className="flex flex-col bg-white ">
         <Header />
         <JumboTron />
