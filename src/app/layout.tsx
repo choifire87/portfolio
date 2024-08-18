@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="scrollbar-hide touch-pan-y">
+    <html lang="ko" className="scrollbar-hide touch-pan-y touch-pinch-zoom">
       <body className="flex flex-col bg-white ">
         <Header />
         <JumboTron />
