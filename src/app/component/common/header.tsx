@@ -66,7 +66,7 @@ export default function Header(){
     ]
 
     return (
-        <header className="flex flex-col sticky top-0 bg-black text-lg h-auto">
+        <header className="flex flex-col sticky top-0 bg-black text-lg h-auto z-30">
             <div className="flex justify-end text-white">
                 <button className="md:hidden p-1" onClick={() => setToggleMobileHeader(!toggleMobileHeader)}>
                     {
