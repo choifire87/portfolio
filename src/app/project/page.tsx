@@ -242,12 +242,12 @@ export default function ProjectPage(){
                     topImages={
                         [
                             {
-                                path: "/project/kingdomSungju/poster.png",
+                                path: "/project/kingdomSungJu/poster.png",
                                 width: 400,
                                 height: 400,
                             },
                             {
-                                path: "/project/kingdomSungju/screenshot.png",
+                                path: "/project/kingdomSungJu/screenshot.png",
                                 width: 400,
                                 height: 400,
                             },
