@@ -10,9 +10,9 @@ export default function SkillItem(props: {
 ){
     return (
         <div className="flex flex-row border-b py-8">
-            <div className="flex w-14 justify-center items-start">
+            <div className="flex min-w-14 justify-center items-start">
             {
-                props.logo ? <Image src={props.logo.path} alt="로고" width={props.logo.width} height={props.logo.height}/> : null
+                props.logo ? <Image src={props.logo.path} alt="로고" width={props.logo.width} height={props.logo.height} objectFit="cover"/> : null
             }
             </div>
             <div className="w-full flex flex-row">
