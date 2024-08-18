@@ -29,8 +29,8 @@ export default function Item(props: {
                     props.topImages ?
                     <div className="flex flex-row flex-wrap mt-5">
                         {
-                        props.topImages.map((image) => (
-                            <Image src={image.path} className="mr-5 mb-5" alt="스크린샷" width={image.width} height={image.height} />
+                        props.topImages.map((image, index) => (
+                            <Image key={index} src={image.path} className="mr-5 mb-5" alt="스크린샷" width={image.width} height={image.height} />
                         ))
                         }
                     </div>
