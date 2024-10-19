@@ -29,7 +29,7 @@ export default function EducationPage(){
                     headFirst="고려대학교"
                     headSecond="컴퓨터통신공학부 학사"
                     headThird="졸업"
-                    subDescription="2007년 3월 ~ 2011년 2월 (2년, 3.8/4.5)"
+                    subDescription="2007년 3월 ~ 2011년 2월 (4년, 3.8/4.5)"
                 />
             </div>
         </section>
