@@ -11,7 +11,7 @@ export default function ProjectPage(){
                     subDescription="2024년 8월 ~ 2024년 8월 (약 1주일)"
                     workDescriptions={
                         [
-                            "NextJS, tailwind, vercel을 사용해 <a class='text-blue-500 underline' href='https://play.google.com/store/apps/details?id=com.fire.allus&hl=ko' target='_blank'>개인 이력서 웹</a>을 구축하였습니다. 간단하게 typescript와 app routing을 활용하였고, 단순한 수준의 개발이었지만, 해당 프로젝트의 목적은 다음과 같이 크게 3가지였습니다.",
+                            "NextJS, tailwind, vercel을 사용해 <a class='text-blue-500 underline' href='https://hwajae-portfolio.vercel.app/' target='_blank'>개인 이력서 웹</a>을 구축하였습니다. 간단하게 typescript와 app routing을 활용하였고, 단순한 수준의 개발이었지만, 해당 프로젝트의 목적은 다음과 같이 크게 3가지였습니다.",
                         ]
                     }
                     works={
