@@ -15,7 +15,7 @@ export default function CareerPage() {
           headSecond="서버 리드"
           subDescription="2025년 3월 ~ 2025년 8월 (5개월)"
           workDescriptions={[
-            "고객사의 앱 서비스에 캐시백 서비스를 간단하게 연동할 수 있게 해주는 Moment 서비스의 백엔드 개발을 리드하였습니다. Moment는 캐시백 웹을 웹뷰 형태로 제공하여 쉽게 고객사 앱에 연동될 수 있으며, SDK를 연동할 경우 고객사 앱을 설치한 사용자가 11번가, 테무 같은 타겟 서비스에 접속 시 이를 인식하여 푸시 알림을 전송할 수 있습니다. 이를 통해 사용자가 캐시백 웹으로 접속해 구매하도록 유도하여 커미션 수익을 창출하고, 고객 서비스의 리텐션을 향상 시킬 수 있습니다. 기존 서비스 운영 및 유지보수와 함께 사업 확장을 위해 필요한 기능들을 설계 개발하며 제품을 개선하였고, 기존 기술 부채들을 조금씩 해소해나가려 노력하였습니다.<br/>- 기술 스택: NestJS, DrizzleORM, Postgres, Redis, GraphQL, GCP(SQL, Memorystore, Pub/Sub, BigQuery 등), Datadog, Pagerduty",
+            "고객사의 앱 서비스에 캐시백 서비스를 간단하게 연동할 수 있게 해주는 Moment 서비스의 백엔드 개발을 리드하였습니다. Moment는 캐시백 웹을 웹뷰 형태로 제공하여 쉽게 고객사 앱에 연동될 수 있으며, SDK를 연동할 경우 고객사 앱을 설치한 사용자가 11번가, 테무 같은 타겟 서비스에 접속 시 이를 인식하여 푸시 알림을 전송할 수 있습니다. 이를 통해 사용자가 캐시백 웹으로 접속해 구매하도록 유도하여 커미션 수익을 창출하고, 고객 서비스의 리텐션을 향상 시킬 수 있습니다. 기존 서비스 운영 및 유지보수와 함께 사업 확장을 위해 필요한 기능들을 설계 개발하며 제품을 개선하였고, 기존 기술 부채들을 조금씩 해소해나가려 노력하였습니다.<br/>- 기술 스택: NestJS, DrizzleORM, Postgres, Redis, GraphQL, Protobuf, GCP(SQL, Memorystore, Pub/Sub, BigQuery 등), Datadog, Pagerduty",
           ]}
           works={[
             [
@@ -49,7 +49,7 @@ export default function CareerPage() {
           headSecond="테크 리드"
           subDescription="2024년 8월 ~ 2024년 11월 (3개월)"
           workDescriptions={[
-            "회사의 현 테크 상황을 파악하고, 개선점과 방안을 도출, 테크 로드맵을 수립하여 회사의 기술적 방향성에 기여하는 역할을 담당하였습니다. 계약관리 솔루션 <a class='text-blue-500 underline' href='https://prix.im/' target='_blank'>프릭스(Prix)</a>의 서버 개발을 주력으로 맡았고, 신규 기능 개발, 기존 기능 개선, 장애 대응과 더불어 제품이 엔터프라이즈 레벨에서 갖추어야 할 서비스의 안정성 향상, 지속 가능한 개발 환경 구축, 속도 병목 포인트 식별 및 개선, 시스템 및 서비스 지표 수집과 측정을 통한 가시성 확보 등을 위해 노력하였습니다.",
+            "회사의 현 테크 상황을 파악하고, 개선점과 방안을 도출, 테크 로드맵을 수립하여 회사의 기술적 방향성에 기여하는 역할을 담당하였습니다. 계약관리 솔루션 <a class='text-blue-500 underline' href='https://prix.im/' target='_blank'>프릭스(Prix)</a>의 서버 개발을 주력으로 맡았고, 신규 기능 개발, 기존 기능 개선, 장애 대응과 더불어 제품이 엔터프라이즈 레벨에서 갖추어야 할 서비스의 안정성 향상, 지속 가능한 개발 환경 구축, 속도 병목 포인트 식별 및 개선, 시스템 및 서비스 지표 수집과 측정을 통한 가시성 확보 등을 위해 노력하였습니다.<br/>- 기술 스택: NodeJS, Express, TypeORM, Postgres, AWS(ECS, S3, SES, CodeBuild 등), Prometheus, Grafana, Terraform, Jenkins",
           ]}
           works={[
             [
@@ -82,7 +82,7 @@ export default function CareerPage() {
           headSecond="테크니컬 디렉터"
           subDescription="2023년 5월 ~ 2024년 2월 (10개월)"
           workDescriptions={[
-            "에이슬립의 SaaS(Sleep-as-a-Service) 서비스인 에이슬립 플랫폼을 만드는 Sleeptrack Platform 스쿼드의 테크니컬 디텍터 역할을 수행하였습니다. 에이슬립 플랫폼은 마이크가 탑재된 디바이스 기기들에서 클라우드로 전송되는 사용자의 호흡음 사운드를 AI로 분석하여, 사용자에게 다양한 수면 분석 결과를 제공하는 서비스로, 서비스 기획, 주요 정책 논의 및 기능 개발, 서비스 운영 및 관리, 팀 운영까지 다양한 부분에 관여하였고, PM, 웹 개발자, 백엔드 개발자, 프로덕트 디자이너, QA 분까지 약 10명정도의 구성원과 함께 제품을 발전시켜 나갔습니다. SKT 에이닷, KB 헬스케어, 삼성생명, Calm, 슬립루틴 등에 연동되는 성과를 내었고, AWS 게임데이에 동료들과 참가해 1등을 하기도 하였으며, 라스베가스에서 열리는 2023 AWS re:invent lightning talk에서 스피커로 발표도 할 수 있었습니다.",
+            "에이슬립의 SaaS(Sleep-as-a-Service) 서비스인 에이슬립 플랫폼을 만드는 Sleeptrack Platform 스쿼드의 테크니컬 디텍터 역할을 수행하였습니다. 에이슬립 플랫폼은 마이크가 탑재된 디바이스 기기들에서 클라우드로 전송되는 사용자의 호흡음 사운드를 AI로 분석하여, 사용자에게 다양한 수면 분석 결과를 제공하는 서비스로, 서비스 기획, 주요 정책 논의 및 기능 개발, 서비스 운영 및 관리, 팀 운영까지 다양한 부분에 관여하였고, PM, 웹 개발자, 백엔드 개발자, 프로덕트 디자이너, QA 분까지 약 10명정도의 구성원과 함께 제품을 발전시켜 나갔습니다. SKT 에이닷, KB 헬스케어, 삼성생명, Calm, 슬립루틴 등에 연동되는 성과를 내었고, AWS 게임데이에 동료들과 참가해 1등을 하기도 하였으며, 라스베가스에서 열리는 2023 AWS re:invent lightning talk에서 스피커로 발표도 할 수 있었습니다.<br/>- 기술 스택: FastAPI, SQLAlchemy, Nginx, Pytorch, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS, SES 등), AWS CDK, Datadog, Jenkins",
           ]}
           works={[
             [
@@ -181,7 +181,7 @@ export default function CareerPage() {
           headSecond="개발팀장"
           subDescription="2018년 2월 ~ 2021년 10월 (3년 9개월)"
           workDescriptions={[
-            "빅데이터 기반 CTI (Cyber Threat Intelligence) 검색엔진 <a class='text-blue-500 underline' href='https://criminalip.io/' target='_blank'>Criminal IP</a> 개발을 총괄하였습니다.",
+            "빅데이터 기반 CTI (Cyber Threat Intelligence) 검색엔진 <a class='text-blue-500 underline' href='https://criminalip.io/' target='_blank'>Criminal IP</a> 개발을 총괄하였습니다.<br/>- 기술 스택: Flask, MySQL, zmap, nmap, selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway 등), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud",
             "Criminal IP B2C 전체 서비스 시스템 초기 개발을 리딩하였습니다.",
             "회사 운영 참여 및 전체 개발팀 총괄하였습니다.",
             "코드 가상화 엔진 1인 개발하였습니다.",
