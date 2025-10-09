@@ -7,6 +7,18 @@ export default function CareerPage() {
       <div className="border-y-2">
         <Item
           logo={{
+            path: "/career/pickleLogo.jpg",
+            width: 40,
+            height: 40,
+          }}
+          headFirst="피클플러스"
+          headSecond="CTO"
+          subDescription="2025년 9월 ~ 현재"
+          workDescriptions={[""]}
+          works={[]}
+        />
+        <Item
+          logo={{
             path: "/career/fairyTechLogo.png",
             width: 40,
             height: 40,
