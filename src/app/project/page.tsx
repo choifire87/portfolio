@@ -28,22 +28,22 @@ export default function ProjectPage() {
           ]}
           topImages={[
             {
-              path: "/project/fairytech/screenshot1.png",
+              path: "/project/fairytech/screenshot1.jpg",
               width: 150,
               height: 200,
             },
             {
-              path: "/project/fairytech/screenshot2.png",
+              path: "/project/fairytech/screenshot2.jpg",
               width: 150,
               height: 200,
             },
             {
-              path: "/project/fairytech/screenshot3.png",
+              path: "/project/fairytech/screenshot3.jpg",
               width: 150,
               height: 200,
             },
             {
-              path: "/project/fairytech/screenshot4.png",
+              path: "/project/fairytech/screenshot4.jpg",
               width: 150,
               height: 200,
             },
@@ -248,90 +248,6 @@ export default function ProjectPage() {
               path: "/project/asleep/kb3.png",
               width: 200,
               height: 500,
-            },
-          ]}
-        />
-        <Item
-          topText="나나리즘"
-          headFirst="킹덤프렌즈 성주"
-          subDescription="2024년 4월 ~ 2024년 5월 (2개월)"
-          workDescriptions={[
-            "카카오톡 챗봇을 활용해 성주에서 카카오톡을 통해 진행할 수 있는 <a class='text-blue-500 underline' href='https://pf.kakao.com/_jxjxeWG' target='_blank'>미션투어 프로그램</a> 개발",
-          ]}
-          works={[
-            [
-              "카카오톡 챗봇 빌더를 이용한 블록 설계",
-              "FastAPI 기반 카카오톡 챗봇 스킬 서버 개발",
-              "데이터베이스 설계",
-              "docker compose를 활용한 배포 및 관리",
-            ],
-          ]}
-          topImages={[
-            {
-              path: "/project/kingdomSungJu/poster.png",
-              width: 400,
-              height: 400,
-            },
-            {
-              path: "/project/kingdomSungJu/screenshot.png",
-              width: 400,
-              height: 400,
-            },
-          ]}
-        />
-        <Item
-          topText="나나리즘"
-          headFirst="미션 더 로컬리안 경주"
-          subDescription="2023년 10월 ~ 2023년 11월 (2개월)"
-          workDescriptions={[
-            "카카오톡 챗봇을 활용해 경주에서 카카오톡을 통해 진행할 수 있는 미션투어 프로그램 개발",
-          ]}
-          works={[
-            [
-              "카카오톡 챗봇 빌더를 이용한 블록 설계",
-              "FastAPI 기반 카카오톡 챗봇 스킬 서버 개발",
-              "데이터베이스 설계",
-              "docker compose를 활용한 배포 및 관리",
-            ],
-          ]}
-          topImages={[
-            {
-              path: "/project/missionTheLocalian/screenshot1.png",
-              width: 200,
-              height: 500,
-            },
-            {
-              path: "/project/missionTheLocalian/screenshot2.png",
-              width: 200,
-              height: 500,
-            },
-          ]}
-        />
-        <Item
-          topText="나나리즘"
-          headFirst="킹덤프렌즈 포항"
-          subDescription="2023년 8월 ~ 2023년 11월 (4개월)"
-          workDescriptions={[
-            "카카오톡 챗봇을 활용해 포항에서 카카오톡을 통해 진행할 수 있는 <a class='text-blue-500 underline' href='https://pf.kakao.com/_xoxfxhqG' target='_blank'>미션투어 프로그램</a> 개발",
-          ]}
-          works={[
-            [
-              "카카오톡 챗봇 빌더를 이용한 블록 설계",
-              "FastAPI 기반 카카오톡 챗봇 스킬 서버 개발",
-              "데이터베이스 설계",
-              "docker compose를 활용한 배포 및 관리",
-            ],
-          ]}
-          topImages={[
-            {
-              path: "/project/kingdomPohang/poster.png",
-              width: 400,
-              height: 400,
-            },
-            {
-              path: "/project/kingdomPohang/screenshot.png",
-              width: 400,
-              height: 400,
             },
           ]}
         />

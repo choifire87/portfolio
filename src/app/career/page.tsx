@@ -15,7 +15,20 @@ export default function CareerPage() {
           headSecond="CTO"
           subDescription="2025년 9월 ~ 현재"
           workDescriptions={[""]}
-          works={[]}
+          works={[
+            [
+              "개발팀 빌딩<br/>- 개발자 채용(수백개 이력서 검토, 후보자 연락 관리, 기술 및 설계 면접 진행 등)<br/>- 개발팀 분기 목표 수립 및 관리<br/>- 개발팀 문화 구축(스터디, 1 on 1, 팀원 모티베이션 체크 및 업무 환경 관리, 팀 내외부 커뮤니케이션 담당",
+              "개발팀 분기 목표 수립 및 관리",
+              "개발팀 문화 구축(팀 스터디 정착, 정기 1 on 1, ",
+              "개발팀 성과 관리(피드백, 평가, 보상)",
+              "전사 개발 관련 구독, 인프라, 비용, 계약 관리(AWS, GCP, Azure, Datadog, Sentry 등)",
+              "개발팀 기술 리드<br/>- Postgres 13 EoL 대응으로 Blue/Green 방식을 통해 16으로 메이저 업그레이드 진행<br/>- 클라우드 기반 분석환경을 위한 ELT 파이프라인 구축(AWS-GCP 간 Site-to-Site VPN -> GCP Datastream -> BigQuery)",
+              "기술 부채 해소<br/>- 상품 구조 개선을 통해 서비스 아키텍처 리빌딩(FE에서 하드코딩으로 관리되던 데이터를 대부분 서버로 이전, 상품 관련 API들을 새로 만들어 의존성 제거 및 동적 상품 판매 구조로 변경 등)<br/>- 배포 속도 개선(health check, connection draining, green 대기 시간 튜닝)<br/>- 클라우드 인프라 비용 절감(ECS 태스크 수 줄이기, 사용되지 않던 리소스들 삭제 등)<br/>- 클로드를 활용해 수백개 API 스웨거 및 포스트맨 콜렉션 정비",
+              "모니터링 시스템 개선<br/>- DB reader DBM 연동을 통해 DB 모니터링 시스템 구축",
+              "Kotlin Spring MSA 구조 전환 시도",
+              "개발 프로세스 AI 구축<br/>- AI 코드리뷰 도구(코드래빗)를 도입해 PR 퀄리티 향상 및 팀 내 부담 완화<br/>- 클로드 코드를 도입하고, AI 워크 스페이스 구축을 통해 하네스 구축 시도",
+            ],
+          ]}
         />
         <Item
           logo={{
