@@ -1,10 +1,13 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { menus } from "@/i18n/content/ui";
 
 export default function Header(){
     const [isVisible, setIsVisible] = useState(false);
     const [toggleMobileHeader, setToggleMobileHeader] = useState(false);
+    const { lang, toggle } = useLanguage();
 
     useEffect(() => {
         setIsVisible(true);
@@ -18,56 +21,16 @@ export default function Header(){
         if(section) section.scrollIntoView({ behavior: "smooth" })
     }
 
-    const menus = [
-        {
-            id: "education",
-            name: "학력"
-        },
-        {
-            id: "career",
-            name: "경력"
-        },
-        {
-            id: "project",
-            name: "프로젝트"
-        },
-        {
-            id: "prize",
-            name: "수상"
-        },
-        {
-            id: "language",
-            name: "외국어"
-        },
-        {
-            id: "certificate",
-            name: "자격증"
-        },
-        {
-            id: "writing",
-            name: "저서"
-        },
-        {
-            id: "thesis",
-            name: "논문"
-        },
-        {
-            id: "patent",
-            name: "특허"
-        },
-        {
-            id: "hobby",
-            name: "취미"
-        },
-        {
-            id: "skill",
-            name: "기술스택"
-        },
-    ]
-
     return (
         <header className="flex flex-col sticky top-0 bg-black text-lg h-auto z-30">
-            <div className="flex justify-end text-white">
+            <div className="flex justify-end items-center text-white">
+                <button
+                    className="px-3 py-1 mr-1 text-sm border border-white rounded md:absolute md:right-6 md:top-1/2 md:-translate-y-1/2 md:mr-0 md:z-10"
+                    onClick={toggle}
+                    aria-label="Toggle language"
+                >
+                    {lang === "ko" ? "EN" : "한국어"}
+                </button>
                 <button className="md:hidden p-1" onClick={() => setToggleMobileHeader(!toggleMobileHeader)}>
                     {
                         toggleMobileHeader ? 
@@ -91,7 +54,7 @@ export default function Header(){
                         menus.map((menu) => (
                             <li key={menu.id} className="px-5">
                                 <a href={`#${menu.id}`} onClick={() => menuClicked(menu.id)}>
-                                    {menu.name}
+                                    {menu.name[lang]}
                                 </a>
                             </li>
                         ))
