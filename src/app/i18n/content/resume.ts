@@ -50,9 +50,10 @@ export const resumeContent: Localized<ResumeContent> = {
     email: "choifire87@gmail.com",
     linkedin: "https://www.linkedin.com/in/hwajae-fire-choi-794b571b0/",
     summary: [
-      "13년간 보안 연구에서 출발해 네 곳의 스타트업에서 백엔드와 클라우드 인프라를 설계·구축·운영해왔으며, 현재는 CTO로 개발 조직을 이끌고 있습니다.",
-      "AWS·GCP 아키텍처, IaC(Terraform·Terragrunt, AWS CDK), CI/CD와 배포 안전성, 관측성 구축, 성능·비용 최적화에 강점이 있고, 정보보호 석사와 국방 보안연구 백그라운드를 갖고 있습니다.",
-      "채용과 목표 관리, 엔지니어링 문화 구축, AI 개발도구의 조직 도입까지 — 만드는 일과 조직을 성장시키는 일을 함께 해왔습니다.",
+      "13년간 보안 연구에서 출발해 네 곳의 스타트업에서 백엔드 시스템과 클라우드 인프라를 함께 설계·구축·운영해온 엔지니어이며, 현재는 CTO로 개발 조직을 이끌고 있습니다.",
+      "사용자가 자는 동안 30초마다 오디오가 유입되는 AI SaaS 플랫폼(MAU 5만), 월 거래액 약 10억 원 규모의 캐시백 정산 시스템 등 트래픽이 무거운 프로덕션을 개발·운영했고 — 서버리스 사용량 집계 파이프라인(API Gateway → Firehose → S3 → Athena)으로 DB에 부하를 주지 않는 과금·통계 체계를 만들고, Redis 캐싱 도입으로 AI 인퍼런스 처리량을 수 배 끌어올리는 등 성능과 비용 문제를 아키텍처로 풀어왔습니다.",
+      "레거시 제품의 도메인 구조와 API를 전면 재설계해 프론트엔드에 흩어져 있던 비즈니스 로직을 서버로 이관하고, feature 브랜치별 Preview 환경처럼 '이게 없을 땐 어떻게 개발했는지 모르겠다'는 평을 받는 개발 생산성 도구를 만드는 등 — 시스템과 개발 경험을 함께 개선합니다.",
+      "AWS·GCP 아키텍처(Site-to-Site VPN 기반 크로스 클라우드 분석 인프라 구축), IaC, CI/CD, 관측성에 정보보호 석사·국방 보안연구의 보안 백그라운드까지 폭넓게 다루며 — 채용과 엔지니어링 문화로 조직을 성장시키고, 코드 리뷰·QA·레거시 마이그레이션까지 AI와 함께 일하는 개발 방식을 조직에 정착시켰으며, 함께 일했던 동료가 다음 회사까지 따라올 만큼 신뢰를 얻으며 일해왔습니다.",
     ],
     sectionTitles: {
       experience: "경력",
@@ -104,7 +105,7 @@ export const resumeContent: Localized<ResumeContent> = {
               "전사 데이터 분석 인프라 구축: AWS–GCP Site-to-Site VPN → GCP Datastream → BigQuery로 이어지는 ELT 파이프라인 설계·구축",
               "AWS ECS에서 feature 브랜치별 독립 Preview 환경 설계·구축 — 개발·QA 환경 개선, 시간 기반 스케줄링과 orphan 클리너로 비용 최적화",
               "Terraform·Terragrunt 기반 IaC 도입으로 코드 기반 인프라 관리 체계 확립",
-              "레거시 시스템 확장성 확보를 위한 일부 코어 기능의 Kotlin Spring MSA 전환 리딩",
+              "역할이 비대해진 레거시 메인 API 서버(Python Django)에서 코어 기능을 분리하는 Kotlin Spring 멀티모듈 MSA 전환 리딩 — 클린 아키텍처, Command-Result 패턴, 도메인 규칙, 모듈 구조를 직접 설계·가이드하며 AI 에이전트와 함께 인증 서버부터 마이그레이션 진행 중 (JVM 가상 스레드 기반, testcontainers 단위·통합 테스트 체계 포함)",
               "DB 형상 관리를 위한 플랫폼 독립적 마이그레이션 도구(Flyway) 도입 결정, 실무자가 주도적으로 완수하도록 위임·지원",
               "AWS·GCP·Azure·Datadog·Sentry·Claude 등 개발팀 SaaS 구독 및 인프라 계약·비용 관리 최적화",
             ],
@@ -135,7 +136,7 @@ export const resumeContent: Localized<ResumeContent> = {
         role: "서버 리드",
         period: "2025.03 – 2025.08",
         intro: [
-          "고객사 앱에 캐시백 서비스를 웹뷰·SDK 형태로 간단히 연동할 수 있게 해주는 Moment 서비스의 백엔드 개발 리드. 기존 서비스 운영·유지보수와 함께 사업 확장에 필요한 기능을 설계·개발하고 기술 부채를 해소.",
+          "고객사 앱에 캐시백 서비스를 웹뷰·SDK 형태로 간단히 연동할 수 있게 해주는 Moment 서비스의 백엔드 개발 리드. 월 거래액 약 10억 원(약 10만 건)의 구매·적립·정산 트랜잭션을 처리하는 시스템으로, 기존 서비스 운영·유지보수와 함께 사업 확장에 필요한 기능을 설계·개발하고 기술 부채를 해소.",
         ],
         techStack:
           "NestJS, DrizzleORM, Postgres, Redis, GraphQL, Protobuf, GCP (SQL, Memorystore, Pub/Sub, BigQuery 등), Datadog, PagerDuty",
@@ -192,7 +193,8 @@ export const resumeContent: Localized<ResumeContent> = {
         role: "테크니컬 디렉터 / 백엔드 챕터 리드 / AI 백엔드 엔지니어",
         period: "2021.10 – 2024.02",
         intro: [
-          "수면 AI SaaS 플랫폼(Sleeptrack API)에서 AI 백엔드 엔지니어로 시작해 백엔드 챕터 리드, 테크니컬 디렉터로 역할을 확장. 마이크 탑재 디바이스에서 클라우드로 전송되는 사용자의 호흡음을 AI로 분석해 수면 결과를 제공하는 플랫폼으로, SKT 에이닷·KB헬스케어·삼성생명·Calm·슬립루틴 등에 연동.",
+          "수면 AI SaaS 플랫폼(Sleeptrack API)을 만드는 시리즈 B 스타트업(누적 약 180억 투자 유치)에서 AI 백엔드 엔지니어로 시작해 백엔드 챕터 리드, 테크니컬 디렉터로 역할을 확장. 마이크 탑재 디바이스에서 클라우드로 전송되는 사용자의 호흡음을 AI로 분석해 수면 결과를 제공하는 플랫폼으로, SKT 에이닷·KB헬스케어·삼성생명·Calm·슬립루틴 등에 연동.",
+          "MAU 5만·DAU 1만 규모였지만, 사용자가 자는 동안 30초마다 오디오(멜 스펙트로그램) 데이터가 유입되는 특성상 트래픽이 매우 무거운 시스템으로, API Gateway 기반 경로 설계와 Lambda Authorizer 인증, 쓰로틀링으로 이를 감당하는 구조를 운영.",
         ],
         techStack:
           "FastAPI, SQLAlchemy, PyTorch, Nginx, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS 등), AWS CDK, Datadog, Jenkins",
@@ -204,8 +206,10 @@ export const resumeContent: Localized<ResumeContent> = {
               "회사 서비스 정책 논의·결정 참여 (비용 분석, 과금 정책, 데이터 보관 규칙, 보안 규칙)",
               "제품 웹 대시보드 초기 기획(Figma)과 지속 개선·운영, 공식 개발자 문서 작성·관리 참여",
               "전체 백엔드 시스템 아키텍팅과 지속적 안정화·고도화 (Elasticache 도입, S3 Presigned URL, SQS FIFO 큐 전환 제안 등)",
+              "수면 분석 파이프라인 전체 설계·운영: SDK가 30초 단위 오디오를 Presigned URL로 S3에 직접 업로드 → 5분 주기 AI 인퍼런스 → 타임슬롯 중첩 구간 앙상블 처리 → DB·Redis 저장 → 수면 종료 시 포스트프로세싱(수면 단계 비율 보정 등 전체 통계 정리) → 실시간·완료 콜백과 Data API를 통한 수면 리포트·통계 제공",
               "사용량 집계(배치 시스템), 권한 제어, 쓰로틀링, 폴백 등 코어 기능 개선·운영",
               "배포 오퍼레이션, DB 관리 (테이블 모델링, failover, binlog replication, 분석용 DB 구축), 서비스 모니터링·장애 대응",
+              "Aurora MySQL 공식 인정 메모리 릭 버그(binlog 활성화 시 freeable memory 고갈로 반복 다운) 장애 대응 및 무중단 엔진 업그레이드 리드 — ZDP는 best-effort, Blue/Green은 RDS Proxy와 비호환인 제약 속에서 DMS로 복제 클러스터를 구성해 백필 + CDC 동기화 후 컴포넌트별 계획 전환, 이후 binlog 복제 기반 분석용 클러스터 재구축",
               "QA 자동화 시스템 구축 서포트 (도메인 지식 공유, 질의응답, BrowserStack 도입)",
               "2023 AWS GameDay 1위, 2023 AWS re:Invent lightning talk 스피커 참가, AWS 고객사례 인터뷰 참가",
             ],
@@ -219,7 +223,7 @@ export const resumeContent: Localized<ResumeContent> = {
               "신규 API 서버 개발 및 기존 서버 고도화 (FastAPI, SQLAlchemy, Layered Architecture, 유닛 테스트 작성)",
               "AI Inference 서버 기능 고도화 (MLflow, PyTorch, onnxruntime)",
               "RDS Aurora 클러스터·RDS Proxy 구축·운영, 글로벌 인프라 리서치·구축 시도 (Global Accelerator, Edge-optimized API Gateway, CloudFront)",
-              "대규모 트래픽 대응 ECS Autoscaling 고도화 (target tracking, 시간 기반 스케줄링), Locust 부하 테스트",
+              "대규모 트래픽 대응 ECS Autoscaling 고도화: SQS 적체량 기반 커스텀 메트릭으로 필요한 워커 수를 계산해 한 번에 스케일아웃하는 구조 설계 (메시지 1,000개 적체 시 200대 동시 기동), target tracking·시간 기반 스케줄링, Locust 부하 테스트 검증",
               "모니터링 시스템 Datadog 마이그레이션·대시보드 구축, CI/CD에 테스트 검증 절차 연동",
               "시스템 운영·장애 대응 및 백엔드 장애 포스트모템 운영, 사내 VPN 구축·운영 (Fortigate)",
             ],
@@ -227,7 +231,7 @@ export const resumeContent: Localized<ResumeContent> = {
           {
             heading: "AI 백엔드 엔지니어 (2021.10 – 2022.08)",
             bullets: [
-              "VPC 설계 및 AI Serving 시스템 구축·운영 (ECS Fargate, Autoscaling, SQS, S3, DynamoDB, Cognito, ELB, Route53)",
+              "VPC 설계 및 AI Serving 시스템 구축·운영 (ECS Fargate, Autoscaling, SQS, S3, DynamoDB, Cognito, ELB, Route53) — 분석 결과가 멱등하게 덮어써지는 특성을 근거로 고처리량 SQS Standard 큐 채택",
               "AWS CDK를 통한 인프라 코드화, FastAPI REST API 및 AI Inference 서버(PyTorch) 개발",
               "MSA 구조·권한 제어 구현 (API Gateway, Lambda Authorizer, Backend Routing), DynamoDB·RDS 테이블 디자인",
               "서비스 미터링 구현 (Firehose, S3, Athena, Jenkins, RDS, Elasticache)",
@@ -241,7 +245,7 @@ export const resumeContent: Localized<ResumeContent> = {
         role: "개발팀장 (첫 멤버)",
         period: "2018.02 – 2021.10",
         intro: [
-          "빅데이터 기반 CTI(Cyber Threat Intelligence) 검색엔진 Criminal IP 개발 총괄. 첫 멤버로 조인해 약 40명 규모까지 성장 (개발팀이 전체 인원의 약 70%).",
+          "빅데이터 기반 CTI(Cyber Threat Intelligence) 검색엔진 Criminal IP 개발 총괄. 첫 멤버로 조인해 시리즈 A 투자 유치를 거치며 약 40명 규모까지 성장한 회사에서 개발팀(전체 인원의 약 70%)을 이끌었음.",
         ],
         techStack:
           "Flask, MySQL, zmap, nmap, Selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway 등), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud",
@@ -324,7 +328,12 @@ export const resumeContent: Localized<ResumeContent> = {
       {
         group: "백엔드",
         items:
-          "Python (FastAPI, Flask, SQLAlchemy), TypeScript/Node.js (NestJS, Express), MySQL, Postgres, Redis, Elasticsearch",
+          "Python (FastAPI, Flask, SQLAlchemy), TypeScript/Node.js (NestJS, Express), Kotlin (Spring Boot — 코어 기능 MSA 전환 리딩 중) — 레이어드·클린 아키텍처, 이벤트 드리븐 설계, 테스트 코드 (unittest, Jest, testcontainers)",
+      },
+      {
+        group: "데이터베이스",
+        items:
+          "MySQL (Aurora), Postgres, Redis, Elasticsearch, DynamoDB — 트랜잭션·잠금(배타 락, 분산 락), 인덱스 설계·실행 계획 분석, binlog 복제, Blue/Green·DMS 무중단 마이그레이션",
       },
       {
         group: "관측성",
@@ -336,7 +345,8 @@ export const resumeContent: Localized<ResumeContent> = {
       },
       {
         group: "AI 엔지니어링",
-        items: "Claude 기반 개발 자동화·에이전틱 워크플로우, AI 코드리뷰, LLM 활용 QA·운영 자동화",
+        items:
+          "Claude 기반 개발 자동화·에이전틱 워크플로우, AI 코드리뷰, LLM 활용 QA·운영 자동화, AI 에이전트 협업 기반 레거시 마이그레이션",
       },
     ],
     education: [
@@ -358,9 +368,10 @@ export const resumeContent: Localized<ResumeContent> = {
     email: "choifire87@gmail.com",
     linkedin: "https://www.linkedin.com/in/hwajae-fire-choi-794b571b0/",
     summary: [
-      "13 years of experience from security research to designing, building, and operating backend systems and cloud infrastructure at four startups — currently leading engineering as CTO.",
-      "Strengths in AWS/GCP architecture, IaC (Terraform/Terragrunt, AWS CDK), CI/CD and deploy safety, observability, and performance/cost optimization, backed by an information security background (M.S. and national defense research).",
-      "Experienced in both building systems and growing organizations: hiring, goal management, engineering culture, and org-wide adoption of AI developer tooling.",
+      "An engineer with 13 years of experience designing, building, and operating backend systems and cloud infrastructure side by side — starting in security research and spanning four startups, currently leading engineering as CTO.",
+      "Built and operated traffic-heavy production systems — an AI SaaS platform ingesting audio every 30 seconds from sleeping users (50K MAU) and a cashback settlement system processing ~₩1B in monthly transactions — and solved performance and cost problems with architecture: a serverless usage-metering pipeline (API Gateway → Firehose → S3 → Athena) powering billing and MAU/DAU statistics with zero database load, and Redis caching that multiplied AI inference throughput.",
+      "I improve systems and developer experience together: fully redesigned a legacy product's domain structure and APIs to move business logic scattered across the frontend back to the server, and built productivity tooling like per-branch preview environments that teammates said they \"can't imagine developing without.\"",
+      "Broad coverage across AWS/GCP architecture (including cross-cloud analytics infrastructure over Site-to-Site VPN), IaC, CI/CD, and observability, backed by a security background (M.S. in Information Security, national defense research) — growing organizations through hiring and engineering culture, embedding an AI-native way of working across code review, QA, and legacy migration, and earning enough trust that a former teammate followed me to my next company.",
     ],
     sectionTitles: {
       experience: "Experience",
@@ -412,7 +423,7 @@ export const resumeContent: Localized<ResumeContent> = {
               "Built company-wide analytics infrastructure: an ELT pipeline running AWS–GCP Site-to-Site VPN → GCP Datastream → BigQuery",
               "Designed and built per-feature-branch preview environments on AWS ECS — improved dev/QA workflows, cost-optimized with time-based scheduling and an orphan cleaner",
               "Introduced IaC with Terraform + Terragrunt, establishing code-based infrastructure management",
-              "Led the migration of core legacy features to a Kotlin Spring MSA structure for scalability",
+              "Leading the extraction of core features from an overloaded legacy main API server (Python Django) into a Kotlin Spring multi-module MSA — personally designing and guiding the clean architecture, command-result pattern, domain rules, and module structure while executing the migration with AI agents, starting from the auth server (virtual-thread-based JVM, unit/integration testing with testcontainers)",
               "Decided on Flyway for platform-independent DB schema versioning and delegated/supported an engineer to lead it to completion",
               "Optimized SaaS subscriptions and infrastructure contracts/costs across AWS, GCP, Azure, Datadog, Sentry, and Claude",
             ],
@@ -443,7 +454,7 @@ export const resumeContent: Localized<ResumeContent> = {
         role: "Server Lead",
         period: "Mar 2025 – Aug 2025",
         intro: [
-          "Led backend development of Moment, a service that lets client apps easily integrate cashback via webview and SDK. Operated and maintained the existing service while designing features for business expansion and paying down technical debt.",
+          "Led backend development of Moment, a service that lets client apps easily integrate cashback via webview and SDK — processing roughly ₩1B in monthly transaction volume (~100K transactions) across purchases, cashback earnings, and settlement. Operated and maintained the existing service while designing features for business expansion and paying down technical debt.",
         ],
         techStack:
           "NestJS, DrizzleORM, Postgres, Redis, GraphQL, Protobuf, GCP (SQL, Memorystore, Pub/Sub, BigQuery, etc.), Datadog, PagerDuty",
@@ -500,7 +511,8 @@ export const resumeContent: Localized<ResumeContent> = {
         role: "Technical Director / Backend Chapter Lead / AI Backend Engineer",
         period: "Oct 2021 – Feb 2024",
         intro: [
-          "Grew from AI Backend Engineer to Backend Chapter Lead to Technical Director on the sleep-AI SaaS platform (Sleeptrack API), which analyzes users' breathing sounds in the cloud to provide sleep analysis. Integrated by SKT A., KB Healthcare, Samsung Life, Calm, and Sleep Routine.",
+          "Grew from AI Backend Engineer to Backend Chapter Lead to Technical Director at a Series B startup (~₩18B raised) building the sleep-AI SaaS platform (Sleeptrack API), which analyzes users' breathing sounds in the cloud to provide sleep analysis. Integrated by SKT A., KB Healthcare, Samsung Life, Calm, and Sleep Routine.",
+          "At 50K MAU / 10K DAU the system was traffic-heavy by nature — ingesting audio (mel spectrogram) data every 30 seconds from each sleeping user — handled through API Gateway path design, Lambda Authorizer authentication, and throttling.",
         ],
         techStack:
           "FastAPI, SQLAlchemy, PyTorch, Nginx, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS, etc.), AWS CDK, Datadog, Jenkins",
@@ -512,8 +524,10 @@ export const resumeContent: Localized<ResumeContent> = {
               "Participated in service policy decisions (cost analysis, billing policy, data retention, security rules)",
               "Initial planning (Figma) and ongoing operation of the product web dashboard; contributed to official developer documentation",
               "Architected the entire backend and drove continuous stabilization and enhancement (Elasticache adoption, S3 presigned URLs, SQS FIFO migration proposal)",
+              "Designed and operated the end-to-end sleep-analysis pipeline: SDK uploads 30-second audio chunks directly to S3 via presigned URLs → AI inference every 5 minutes → ensemble over overlapping time slots → results stored in DB and Redis → post-processing at sleep end (normalizing whole-night statistics such as sleep-stage ratios) → real-time and completion callbacks plus sleep reports and statistics via a Data API",
               "Improved and operated core features: usage aggregation (batch system), access control, throttling, fallback",
               "Deployment operations, DB management (modeling, failover, binlog replication, analytics DB), monitoring, and incident response",
+              "Led incident response and a zero-downtime engine upgrade for an officially confirmed Aurora MySQL memory-leak bug (freeable-memory exhaustion with binlog enabled, causing repeated crashes) — with ZDP being best-effort and Blue/Green incompatible with RDS Proxy, built a replica cluster via DMS with backfill + CDC sync and switched components over on a plan; later rebuilt the binlog-replication analytics cluster",
               "Supported building the QA automation system (domain knowledge sharing, Q&A, BrowserStack)",
               "1st place at 2023 AWS GameDay; speaker at the 2023 AWS re:Invent lightning talk; AWS customer case interview",
             ],
@@ -527,7 +541,7 @@ export const resumeContent: Localized<ResumeContent> = {
               "Developed new API servers and enhanced existing ones (FastAPI, SQLAlchemy, layered architecture, unit tests)",
               "Enhanced the AI inference server (MLflow, PyTorch, onnxruntime)",
               "Built and operated the RDS Aurora cluster and RDS Proxy; researched global infrastructure (Global Accelerator, edge-optimized API Gateway, CloudFront)",
-              "Enhanced ECS autoscaling for large traffic (target tracking, time-based scheduling); load testing with Locust",
+              "Enhanced ECS autoscaling for large traffic: designed queue-depth-based scaling that computes the needed worker count from a custom SQS backlog metric and scales out in one step (1,000 backlogged messages → 200 workers at once), plus target tracking, time-based scheduling, and Locust load-test validation",
               "Migrated monitoring to Datadog with dashboards; integrated test verification into CI/CD",
               "System operation, incident response, and backend postmortems; built and ran the internal VPN (Fortigate)",
             ],
@@ -535,7 +549,7 @@ export const resumeContent: Localized<ResumeContent> = {
           {
             heading: "AI Backend Engineer (Oct 2021 – Aug 2022)",
             bullets: [
-              "VPC design; built and operated the AI serving system (ECS Fargate, Autoscaling, SQS, S3, DynamoDB, Cognito, ELB, Route53)",
+              "VPC design; built and operated the AI serving system (ECS Fargate, Autoscaling, SQS, S3, DynamoDB, Cognito, ELB, Route53) — chose high-throughput SQS Standard queues based on the idempotent overwrite semantics of analysis results",
               "Infrastructure as code with AWS CDK; developed REST APIs (FastAPI) and the AI inference server (PyTorch)",
               "Implemented the MSA structure and access control (API Gateway, Lambda Authorizer, backend routing); designed DynamoDB and RDS tables",
               "Implemented service metering (Firehose, S3, Athena, Jenkins, RDS, Elasticache)",
@@ -549,7 +563,7 @@ export const resumeContent: Localized<ResumeContent> = {
         role: "Head of Development (First Employee)",
         period: "Feb 2018 – Oct 2021",
         intro: [
-          "Led development of Criminal IP, a big-data Cyber Threat Intelligence search engine. Joined as the first member and led development as the company grew to ~40 people (engineering was ~70% of headcount).",
+          "Led development of Criminal IP, a big-data Cyber Threat Intelligence search engine. Joined as the first member and led engineering (~70% of headcount) as the company raised its Series A and grew to ~40 people.",
         ],
         techStack:
           "Flask, MySQL, zmap, nmap, Selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway, etc.), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud",
@@ -634,7 +648,12 @@ export const resumeContent: Localized<ResumeContent> = {
       {
         group: "Backend",
         items:
-          "Python (FastAPI, Flask, SQLAlchemy), TypeScript/Node.js (NestJS, Express), MySQL, Postgres, Redis, Elasticsearch",
+          "Python (FastAPI, Flask, SQLAlchemy), TypeScript/Node.js (NestJS, Express), Kotlin (Spring Boot — leading an ongoing core-feature MSA migration) — layered/clean architecture, event-driven design, testing (unittest, Jest, testcontainers)",
+      },
+      {
+        group: "Databases",
+        items:
+          "MySQL (Aurora), Postgres, Redis, Elasticsearch, DynamoDB — transactions and locking (exclusive/distributed locks), index design and execution-plan analysis, binlog replication, Blue/Green and DMS zero-downtime migrations",
       },
       {
         group: "Observability",
@@ -648,7 +667,7 @@ export const resumeContent: Localized<ResumeContent> = {
       {
         group: "AI Engineering",
         items:
-          "Claude-based development automation and agentic workflows, AI code review, LLM-driven QA and ops automation",
+          "Claude-based development automation and agentic workflows, AI code review, LLM-driven QA and ops automation, AI-agent-assisted legacy migration",
       },
     ],
     education: [
