@@ -11,6 +11,36 @@ const asleepArchitecture: ImageInfo[] = [
   { path: "/project/asleep/architecture.png", width: 800, height: 500 },
 ];
 
+// 제품 이해를 돕기 위한 스크린샷 (구 프로젝트 섹션에서 이관)
+const fairytechImages: ImageInfo[] = [
+  { path: "/project/fairytech/screenshot1.jpg", width: 150, height: 200 },
+  { path: "/project/fairytech/screenshot2.jpg", width: 150, height: 200 },
+  { path: "/project/fairytech/screenshot3.jpg", width: 150, height: 200 },
+  { path: "/project/fairytech/screenshot4.jpg", width: 150, height: 200 },
+  { path: "/project/fairytech/screenshot5.jpg", width: 150, height: 200 },
+];
+
+const asleepProductImages: ImageInfo[] = [
+  { path: "/project/asleep/adot1.png", width: 600, height: 300 },
+  { path: "/project/asleep/adot2.png", width: 200, height: 500 },
+  { path: "/project/asleep/adot3.png", width: 200, height: 500 },
+  { path: "/project/asleep/sleeproutine1.png", width: 200, height: 500 },
+  { path: "/project/asleep/sleeproutine2.png", width: 200, height: 500 },
+  { path: "/project/asleep/sleeproutine3.png", width: 200, height: 500 },
+  { path: "/project/asleep/alora1.png", width: 200, height: 500 },
+  { path: "/project/asleep/alora2.png", width: 200, height: 500 },
+  { path: "/project/asleep/alora3.png", width: 200, height: 500 },
+  { path: "/project/asleep/kb1.png", width: 200, height: 500 },
+  { path: "/project/asleep/kb2.png", width: 200, height: 500 },
+  { path: "/project/asleep/kb3.png", width: 200, height: 500 },
+];
+
+const asleepTopImages: ImageInfo[] = [...asleepArchitecture, ...asleepProductImages];
+
+const criminalIpImages: ImageInfo[] = [
+  { path: "/project/criminalip/screenshot.png", width: 800, height: 400 },
+];
+
 const prixLink = "https://prix.im/";
 const prixApiKitLink = "https://api-kit.prix.im/";
 const asleepDashboardLink = "https://dashboard.asleep.ai/";
@@ -20,6 +50,9 @@ const reinventLink =
   "https://aws.amazon.com/ko/blogs/korea/aws-reinvent-2023-korean-sessions/";
 const awsInterviewLink = "https://www.youtube.com/watch?v=ZKWwMvpdFZ0";
 const criminalIpLink = "https://criminalip.io/";
+const criminalIpChromeLink =
+  "https://chromewebstore.google.com/detail/criminal-ip-ai-based-phis/dhkbjdnlhahnffncheehbnoaecncdpdk";
+const rewolfLink = "https://github.com/rwfpl/rewolf-x86-virtualizer";
 
 export const careerContent: Localized<SectionContent> = {
   ko: {
@@ -47,6 +80,7 @@ export const careerContent: Localized<SectionContent> = {
         headFirst: "페어리테크",
         headSecond: "서버 리드",
         subDescription: "2025년 3월 ~ 2025년 8월 (5개월)",
+        topImages: fairytechImages,
         workDescriptions: [
           "고객사의 앱 서비스에 캐시백 서비스를 간단하게 연동할 수 있게 해주는 Moment 서비스의 백엔드 개발을 리드하였습니다. Moment는 캐시백 웹을 웹뷰 형태로 제공하여 쉽게 고객사 앱에 연동될 수 있으며, SDK를 연동할 경우 고객사 앱을 설치한 사용자가 11번가, 테무 같은 타겟 서비스에 접속 시 이를 인식하여 푸시 알림을 전송할 수 있습니다. 이를 통해 사용자가 캐시백 웹으로 접속해 구매하도록 유도하여 커미션 수익을 창출하고, 고객 서비스의 리텐션을 향상 시킬 수 있습니다. 기존 서비스 운영 및 유지보수와 함께 사업 확장을 위해 필요한 기능들을 설계 개발하며 제품을 개선하였고, 기존 기술 부채들을 조금씩 해소해나가려 노력하였습니다.<br/>- 기술 스택: NestJS, DrizzleORM, Postgres, Redis, GraphQL, Protobuf, GCP(SQL, Memorystore, Pub/Sub, BigQuery 등), Datadog, Pagerduty",
         ],
@@ -106,10 +140,12 @@ export const careerContent: Localized<SectionContent> = {
       {
         logo: asleepLogo,
         headFirst: "에이슬립",
-        headSecond: "테크니컬 디렉터",
-        subDescription: "2023년 5월 ~ 2024년 2월 (10개월)",
+        headSecond: "AI 백엔드 엔지니어 → 백엔드 챕터 리드 → 테크니컬 디렉터",
+        subDescription: "2021년 10월 ~ 2024년 2월 (2년 5개월)",
         workDescriptions: [
-          "에이슬립의 SaaS(Sleep-as-a-Service) 서비스인 에이슬립 플랫폼을 만드는 Sleeptrack Platform 스쿼드의 테크니컬 디텍터 역할을 수행하였습니다. 에이슬립 플랫폼은 마이크가 탑재된 디바이스 기기들에서 클라우드로 전송되는 사용자의 호흡음 사운드를 AI로 분석하여, 사용자에게 다양한 수면 분석 결과를 제공하는 서비스로, 서비스 기획, 주요 정책 논의 및 기능 개발, 서비스 운영 및 관리, 팀 운영까지 다양한 부분에 관여하였고, PM, 웹 개발자, 백엔드 개발자, 프로덕트 디자이너, QA 분까지 약 10명정도의 구성원과 함께 제품을 발전시켜 나갔습니다. SKT 에이닷, KB 헬스케어, 삼성생명, Calm, 슬립루틴 등에 연동되는 성과를 내었고, AWS 게임데이에 동료들과 참가해 1등을 하기도 하였으며, 라스베가스에서 열리는 2023 AWS re:invent lightning talk에서 스피커로 발표도 할 수 있었습니다.<br/>- 기술 스택: FastAPI, SQLAlchemy, Nginx, Pytorch, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS, SES 등), AWS CDK, Datadog, Jenkins",
+          "<strong>테크니컬 디렉터 (2023년 5월 ~ 2024년 2월)</strong><br/>에이슬립의 SaaS(Sleep-as-a-Service) 서비스인 에이슬립 플랫폼을 만드는 Sleeptrack Platform 스쿼드의 테크니컬 디렉터 역할을 수행하였습니다. 에이슬립 플랫폼은 마이크가 탑재된 디바이스 기기들에서 클라우드로 전송되는 사용자의 호흡음 사운드를 AI로 분석하여, 수면 단계, 호흡 안정도, 코골이, 수면 효율, 수면 점수, 슬립 사이클 등 다양한 수면 분석 결과를 제공하는 서비스입니다. SDK, API, 웹 대시보드, 개발자 문서로 구성되어 마이크가 있는 스마트폰, 스피커 등 다양한 디바이스에 편리하게 적용할 수 있습니다. 저는 서비스 기획, 주요 정책 논의 및 기능 개발, 서비스 운영 및 관리, 팀 운영까지 다양한 부분에 관여하였고, PM, 웹 개발자, 백엔드 개발자, 프로덕트 디자이너, QA 분까지 약 10명정도의 구성원과 함께 제품을 발전시켜 나갔습니다. SKT 에이닷, KB 헬스케어, 삼성생명, Calm, 슬립루틴 등에 연동되는 성과를 내었고, AWS 게임데이에 동료들과 참가해 1등을 하기도 하였으며, 라스베가스에서 열리는 2023 AWS re:invent lightning talk에서 스피커로 발표도 할 수 있었습니다.<br/>- 기술 스택: FastAPI, SQLAlchemy, Nginx, Pytorch, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS, SES 등), AWS CDK, Datadog, Jenkins",
+          "<strong>백엔드 챕터 리드 (2022년 8월 ~ 2023년 5월)</strong><br/>개발해오던 AI 백엔드를 Sleeptrack API라 명명하고, 조금 더 제품 레벨에서 리딩을 하게 되었습니다. 그러기 위해 필요한 구조와 기능들, 컴포넌트들을 식별하고, 기존 시스템들도 더 고도화시키고 안정화 시키는데 주력하였습니다. MSA 환경 하에서 시니어 백엔드 개발자 두분과 함께 서로 영역을 나눠 책임을 분리하여 일했고, 제가 전체 시스템을 챙겼습니다. 또한, 매트릭스 구조의 조직 체계에 따라 백엔드 챕터의 리드를 맡게 되어, 6명으로 구성된 백엔드 팀을 챙기는 역할도 함께 수행하였습니다.",
+          "<strong>AI 백엔드 엔지니어 (2021년 10월 ~ 2022년 8월)</strong><br/>클라우드 상에서 사용자의 호흡음을 AI로 분석하는 AI 백엔드와 전체 에이슬립 백엔드의 아키텍팅 구축 및 개발을 담당하였습니다.",
         ],
         works: [
           [
@@ -119,24 +155,13 @@ export const careerContent: Localized<SectionContent> = {
             `<a class='text-blue-500 underline' href='${asleepDocsLink}' target='_blank'>공식 개발자 문서</a> 작성 및 관리 참여`,
             "전체 백엔드 시스템 아키텍팅 / 지속적인 안정화, 기능 개발 및 개선, 고도화에 참여(성능 향상을 위한 Elasticache 도입, S3 Presigned URL, SQS FIFO 큐 전환 제안 등)",
             "사용량 집계(배치 시스템 구축), 권한 제어, 쓰로틀링, 폴백 기능 등과 같은 코어 기능 개선 및 운영",
+            "보안 관련 기능 구축 및 관리 (WAF, ACL 등)",
             "배포 오퍼레이션, DB 관리(테이블 모델링, failover, binlog replication, db migration, 분석용 DB 구축 등), 서비스 모니터링 및 장애 대응 (slow query, cpu & memory 등)",
             "QA 자동화 시스템 구축 서포트 (시스템 설명 및 도메인 지식 공유, 질의 응답, Browerstack 구매 등)",
             `<a class='text-blue-500 underline' href='${gamedayLink}' target='_blank'>2023 AWS Gameday 1위</a>`,
-            `<a class='text-blue-500 underline' href='${reinventLink}' target='_blank'>2023 AWS re:invent lightning talk 스피커 참가</a> (GBL211-KO Buliding sleep apps on AWS with AI as a service)`,
+            `<a class='text-blue-500 underline' href='${reinventLink}' target='_blank'>2023 AWS re:invent lightning talk 스피커 참가</a> (GBL211-KO Building sleep apps on AWS with AI as a service)`,
             `<a class='text-blue-500 underline' href='${awsInterviewLink}' target='_blank'>AWS 고객사례 인터뷰 참가</a>`,
           ],
-        ],
-        topImages: asleepArchitecture,
-      },
-      {
-        logo: asleepLogo,
-        headFirst: "에이슬립",
-        headSecond: "백엔드 챕터 리드",
-        subDescription: "2022년 8월 ~ 2023년 5월 (10개월)",
-        workDescriptions: [
-          "개발해오던 AI 백엔드를 Sleeptrack API라 명명하고, 조금 더 제품 레벨에서 리딩을 하게 되었습니다. 그러기 위해 필요한 구조와 기능들, 컴포넌트들을 식별하고, 기존 시스템들도 더 고도화시키고 안정화 시키는데 주력하였습니다. MSA 환경 하에서 시니어 백엔드 개발자 두분과 함께 서로 영역을 나눠 책임을 분리하여 일했고, 제가 제가 전체 시스템을 챙겼습니다. 또한, 매트릭스 구조의 조직 체계에 따라 백엔드 챕터의 리드를 맡게 되어, 6명으로 구성된 백엔드 팀을 챙기는 역할도 함께 수행하였습니다.",
-        ],
-        works: [
           [
             "Jira와 Slack을 통한 업무 식별, 할당 및 관리",
             "데일리 스탠드업, 위클리 미팅, 스터디, 1 on 1 진행",
@@ -156,17 +181,6 @@ export const careerContent: Localized<SectionContent> = {
             "백엔드 장애 시 포스트모템 진행",
             "회사 내부 VPN 구축 및 운영 (Fortigate)",
           ],
-        ],
-      },
-      {
-        logo: asleepLogo,
-        headFirst: "에이슬립",
-        headSecond: "AI 백엔드 엔지니어",
-        subDescription: "2021년 10월 ~ 2022년 8월 (11개월)",
-        workDescriptions: [
-          "클라우드 상에서 사용자의 호흡음을 AI로 분석하는 AI 백엔드와 전체 에이슬립 백엔드의 아키텍팅 구축 및 개발을 담당하였습니다.",
-        ],
-        works: [
           [
             "VPC 설계",
             "AI Serving 시스템 구축 및 운영 (ECS Fargate, Autoscaling, SQS, S3, DDB, Cognito, ELB, Route53)",
@@ -183,17 +197,19 @@ export const careerContent: Localized<SectionContent> = {
             "CI/CD 파이프라인 구축 (Github Actions)",
           ],
         ],
+        topImages: asleepTopImages,
       },
       {
         logo: aisLogo,
         headFirst: "에이아이스페라",
         headSecond: "개발팀장",
         subDescription: "2018년 2월 ~ 2021년 10월 (3년 9개월)",
+        topImages: criminalIpImages,
         workDescriptions: [
-          `빅데이터 기반 CTI (Cyber Threat Intelligence) 검색엔진 <a class='text-blue-500 underline' href='${criminalIpLink}' target='_blank'>Criminal IP</a> 개발을 총괄하였습니다.<br/>- 기술 스택: Flask, MySQL, zmap, nmap, selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway 등), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud`,
+          `빅데이터 기반 CTI (Cyber Threat Intelligence) 검색엔진 <a class='text-blue-500 underline' href='${criminalIpLink}' target='_blank'>Criminal IP</a> 개발을 총괄하였습니다. Criminal IP는 IP, 포트, 도메인, 취약점, 위치, 블랙리스트, 악성코드 등 인터넷 상의 다양한 위협 정보를 찾아주는 검색엔진입니다.<br/>- 기술 스택: Flask, MySQL, zmap, nmap, selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway 등), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud`,
           "Criminal IP B2C 전체 서비스 시스템 초기 개발을 리딩하였습니다.",
           "회사 운영 참여 및 전체 개발팀 총괄하였습니다.",
-          "코드 가상화 엔진 1인 개발하였습니다.",
+          "국가 과제로 바이너리 난독화(코드 가상화) 엔진을 1인 개발하였습니다.",
         ],
         works: [
           [
@@ -214,7 +230,7 @@ export const careerContent: Localized<SectionContent> = {
             "Search 메뉴에 Asset Search, Domain Search, Image Search, Exploit Search 기능 개발 참여",
             "Intelligence 메뉴에 Banner Explorer, Vulnerability, Statistics, Maps 기능 개발 참여",
             "Pricing 플랜 정책 결정 참여, 결제 모듈 연동(Stripe), 결제 정보에 따른 권한 제어 및 사용량 측정 제어 기능 초기 개발",
-            "Chrome Extension 초기 개발",
+            `<a class='text-blue-500 underline' href='${criminalIpChromeLink}' target='_blank'>Chrome Extension</a> 초기 개발`,
             "시스템 로깅, 모니터링 시스템 구축 및 전반적인 서비스 운영에 관여",
           ],
           [
@@ -230,7 +246,7 @@ export const careerContent: Localized<SectionContent> = {
             "영업 기술 미팅 서포트",
           ],
           [
-            "x86 환경에서 Windows 32 바이너리를 타겟",
+            `x86 환경에서 가상 인스트럭션(Virtual Instruction)을 정의하고 이를 해석하는 VM 엔진을 만들어 코드 가상화(Code Virtualization) 기술을 구현, Windows 32비트 바이너리를 타겟 (<a class='text-blue-500 underline' href='${rewolfLink}' target='_blank'>참고 오픈소스</a>)`,
             "C++(코드 가상화 프로그램)과 어셈블리 코드(VM 엔진)를 사용해 개발",
             "프로젝트 기간은 1년 정도였고, 개발 기간은 약 3개월 정도로 기억",
           ],
@@ -271,6 +287,7 @@ export const careerContent: Localized<SectionContent> = {
         headFirst: "FairyTech",
         headSecond: "Server Lead",
         subDescription: "Mar 2025 ~ Aug 2025 (5 months)",
+        topImages: fairytechImages,
         workDescriptions: [
           "I led backend development of Moment, a service that lets client apps easily integrate cashback functionality. Moment provides a cashback web page as a webview so it can be integrated easily into a client's app, and when the SDK is integrated, users who installed the client app can be detected when they visit target services like 11st or Temu, allowing push notifications to be sent. This encourages users to access the cashback web page and make purchases, generating commission revenue and improving retention of the client's service. Alongside operating and maintaining the existing service, I designed and developed features needed for business expansion to improve the product, and worked to gradually resolve existing technical debt.<br/>- Tech stack: NestJS, DrizzleORM, Postgres, Redis, GraphQL, Protobuf, GCP (SQL, Memorystore, Pub/Sub, BigQuery, etc.), Datadog, PagerDuty",
         ],
@@ -330,10 +347,12 @@ export const careerContent: Localized<SectionContent> = {
       {
         logo: asleepLogo,
         headFirst: "Asleep",
-        headSecond: "Technical Director",
-        subDescription: "May 2023 ~ Feb 2024 (10 months)",
+        headSecond: "AI Backend Engineer → Backend Chapter Lead → Technical Director",
+        subDescription: "Oct 2021 ~ Feb 2024 (2 years 5 months)",
         workDescriptions: [
-          "I served as the technical director of the Sleeptrack Platform squad, which builds the Asleep Platform, Asleep's SaaS (Sleep-as-a-Service) offering. The Asleep Platform is a service that uses AI to analyze the breathing sounds of users sent to the cloud from mic-equipped devices, providing users with various sleep analysis results. I was involved in many areas from service planning, key policy discussions and feature development, to service operation & management and team operation, and evolved the product together with about 10 members including a PM, web developers, backend developers, a product designer, and QA. We achieved integrations with SKT A., KB Healthcare, Samsung Life, Calm, Sleep Routine, and more; my colleagues and I won 1st place at AWS GameDay; and I even got to speak at the 2023 AWS re:invent lightning talk in Las Vegas.<br/>- Tech stack: FastAPI, SQLAlchemy, Nginx, Pytorch, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS, SES, etc.), AWS CDK, Datadog, Jenkins",
+          "<strong>Technical Director (May 2023 ~ Feb 2024)</strong><br/>I served as the technical director of the Sleeptrack Platform squad, which builds the Asleep Platform, Asleep's SaaS (Sleep-as-a-Service) offering. The Asleep Platform is a service that uses AI to analyze the breathing sounds of users sent to the cloud from mic-equipped devices, providing various sleep analysis results such as sleep stages, breathing stability, snoring, sleep efficiency, sleep score, and sleep cycles. It consists of an SDK, API, web dashboard, and developer documentation, and can be conveniently applied to various mic-equipped devices such as smartphones and speakers. I was involved in many areas from service planning, key policy discussions and feature development, to service operation & management and team operation, and evolved the product together with about 10 members including a PM, web developers, backend developers, a product designer, and QA. We achieved integrations with SKT A., KB Healthcare, Samsung Life, Calm, Sleep Routine, and more; my colleagues and I won 1st place at AWS GameDay; and I even got to speak at the 2023 AWS re:invent lightning talk in Las Vegas.<br/>- Tech stack: FastAPI, SQLAlchemy, Nginx, Pytorch, AWS (ECS, Aurora MySQL, SQS, S3, API Gateway, Lambda, DynamoDB, Elasticache, Firehose, Athena, DMS, SES, etc.), AWS CDK, Datadog, Jenkins",
+          "<strong>Backend Chapter Lead (Aug 2022 ~ May 2023)</strong><br/>I named the AI backend we'd been developing the Sleeptrack API and began leading it more at the product level. To do so, I identified the structures, features, and components needed, and focused on further advancing and stabilizing the existing systems. Under an MSA environment, I worked with two senior backend developers, dividing areas and separating responsibilities, while I looked after the entire system. Also, following the matrix organizational structure, I became the lead of the backend chapter, so I also took on the role of caring for a 6-person backend team.",
+          "<strong>AI Backend Engineer (Oct 2021 ~ Aug 2022)</strong><br/>I was responsible for architecting, building, and developing the AI backend that uses AI to analyze users' breathing sounds in the cloud, as well as the entire Asleep backend.",
         ],
         works: [
           [
@@ -343,24 +362,13 @@ export const careerContent: Localized<SectionContent> = {
             `Participated in writing and maintaining the <a class='text-blue-500 underline' href='${asleepDocsLink}' target='_blank'>official developer documentation</a>`,
             "Architected the entire backend system / participated in continuous stabilization, feature development and improvement, and enhancement (adopting Elasticache for performance, S3 presigned URLs, proposing a switch to SQS FIFO queues, etc.)",
             "Improved and operated core features such as usage aggregation (built a batch system), access control, throttling, and fallback",
+            "Built and managed security-related features (WAF, ACL, etc.)",
             "Deployment operations, DB management (table modeling, failover, binlog replication, DB migration, building an analytics DB, etc.), service monitoring, and incident response (slow queries, CPU & memory, etc.)",
             "Supported building the QA automation system (explaining the system and sharing domain knowledge, Q&A, purchasing BrowserStack, etc.)",
             `<a class='text-blue-500 underline' href='${gamedayLink}' target='_blank'>1st place at 2023 AWS GameDay</a>`,
             `<a class='text-blue-500 underline' href='${reinventLink}' target='_blank'>Speaker at the 2023 AWS re:invent lightning talk</a> (GBL211-KO Building sleep apps on AWS with AI as a service)`,
             `<a class='text-blue-500 underline' href='${awsInterviewLink}' target='_blank'>Participated in an AWS customer case interview</a>`,
           ],
-        ],
-        topImages: asleepArchitecture,
-      },
-      {
-        logo: asleepLogo,
-        headFirst: "Asleep",
-        headSecond: "Backend Chapter Lead",
-        subDescription: "Aug 2022 ~ May 2023 (10 months)",
-        workDescriptions: [
-          "I named the AI backend we'd been developing the Sleeptrack API and began leading it more at the product level. To do so, I identified the structures, features, and components needed, and focused on further advancing and stabilizing the existing systems. Under an MSA environment, I worked with two senior backend developers, dividing areas and separating responsibilities, while I looked after the entire system. Also, following the matrix organizational structure, I became the lead of the backend chapter, so I also took on the role of caring for a 6-person backend team.",
-        ],
-        works: [
           [
             "Identifying, assigning, and managing work through Jira and Slack",
             "Running daily standups, weekly meetings, study groups, and 1-on-1s",
@@ -380,17 +388,6 @@ export const careerContent: Localized<SectionContent> = {
             "Ran postmortems for backend incidents",
             "Built and operated the company's internal VPN (Fortigate)",
           ],
-        ],
-      },
-      {
-        logo: asleepLogo,
-        headFirst: "Asleep",
-        headSecond: "AI Backend Engineer",
-        subDescription: "Oct 2021 ~ Aug 2022 (11 months)",
-        workDescriptions: [
-          "I was responsible for architecting, building, and developing the AI backend that uses AI to analyze users' breathing sounds in the cloud, as well as the entire Asleep backend.",
-        ],
-        works: [
           [
             "VPC design",
             "Built and operated the AI serving system (ECS Fargate, Autoscaling, SQS, S3, DDB, Cognito, ELB, Route53)",
@@ -407,17 +404,19 @@ export const careerContent: Localized<SectionContent> = {
             "Built a CI/CD pipeline (GitHub Actions)",
           ],
         ],
+        topImages: asleepTopImages,
       },
       {
         logo: aisLogo,
         headFirst: "AI SPERA",
         headSecond: "Head of Development",
         subDescription: "Feb 2018 ~ Oct 2021 (3 years 9 months)",
+        topImages: criminalIpImages,
         workDescriptions: [
-          `I led the development of <a class='text-blue-500 underline' href='${criminalIpLink}' target='_blank'>Criminal IP</a>, a big-data-based CTI (Cyber Threat Intelligence) search engine.<br/>- Tech stack: Flask, MySQL, zmap, nmap, selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway, etc.), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud`,
+          `I led the development of <a class='text-blue-500 underline' href='${criminalIpLink}' target='_blank'>Criminal IP</a>, a big-data-based CTI (Cyber Threat Intelligence) search engine that finds various threat information on the internet such as IPs, ports, domains, vulnerabilities, locations, blacklists, and malware.<br/>- Tech stack: Flask, MySQL, zmap, nmap, selenium, AWS (EC2, ELB, Route 53, Lambda, API Gateway, etc.), Nginx, Elasticsearch, ELK, Zabbix, Rundeck, Azure, NHN Cloud`,
           "I led the initial development of the entire Criminal IP B2C service system.",
           "I participated in company operations and oversaw the entire development team.",
-          "I single-handedly developed a code virtualization engine.",
+          "I single-handedly developed a binary obfuscation (code virtualization) engine as a national project.",
         ],
         works: [
           [
@@ -438,7 +437,7 @@ export const careerContent: Localized<SectionContent> = {
             "Participated in developing Asset Search, Domain Search, Image Search, and Exploit Search features in the Search menu",
             "Participated in developing Banner Explorer, Vulnerability, Statistics, and Maps features in the Intelligence menu",
             "Participated in deciding pricing plan policies, integrated the payment module (Stripe), and did initial development of access control and usage-metering control based on payment info",
-            "Initial development of the Chrome Extension",
+            `Initial development of the <a class='text-blue-500 underline' href='${criminalIpChromeLink}' target='_blank'>Chrome Extension</a>`,
             "Involved in system logging, building the monitoring system, and overall service operation",
           ],
           [
@@ -454,7 +453,7 @@ export const careerContent: Localized<SectionContent> = {
             "Supported technical sales meetings",
           ],
           [
-            "Targeted Windows 32-bit binaries on x86",
+            `Defined virtual instructions on x86 and built a VM engine to interpret them, implementing code virtualization technology targeting Windows 32-bit binaries (<a class='text-blue-500 underline' href='${rewolfLink}' target='_blank'>reference open source</a>)`,
             "Developed using C++ (the code virtualization program) and assembly code (the VM engine)",
             "The project ran for about a year, and I recall the development took about 3 months",
           ],

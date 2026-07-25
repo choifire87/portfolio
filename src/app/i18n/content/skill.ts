@@ -188,8 +188,17 @@ export const skillContent: Localized<SkillSectionContent> = {
         logo: logo("aws-cdk.svg"),
         headText: "AWS CDK",
         descriptions: [
-          "- 이전 회사에서는 웹 콘솔로만 작업하다가, 에이슬립에서는 IaC(Infra as Code) 방식을 통해 전체 인프라를 구축 및 관리하였는데요. 클라우드 리소스들을 여러 stack으로 나눠서 전체적으로 관리하였고, 외부 환경 변수를 주입받아 개발 환경, 프로덕션 환경, QA 환경 등을 하나의 코드베이스로 관리할 수 있도록 하였습니다. 선언형 방식인 terraform은 사용해보지 못했지만 python과 같은 프로그래밍 언어로 전체 인프라를 파악하고 지속적으로 형상관리 할 수 있어서, 적은 인원이서 큰 인프라를 비교적 효율적으로 관리할 수 있었습니다.",
+          "- 이전 회사에서는 웹 콘솔로만 작업하다가, 에이슬립에서는 IaC(Infra as Code) 방식을 통해 전체 인프라를 구축 및 관리하였는데요. 클라우드 리소스들을 여러 stack으로 나눠서 전체적으로 관리하였고, 외부 환경 변수를 주입받아 개발 환경, 프로덕션 환경, QA 환경 등을 하나의 코드베이스로 관리할 수 있도록 하였습니다. python과 같은 프로그래밍 언어로 전체 인프라를 파악하고 지속적으로 형상관리 할 수 있어서, 적은 인원이서 큰 인프라를 비교적 효율적으로 관리할 수 있었습니다. 이후 래티스와 피클플러스에서는 선언형 방식인 Terraform을 사용하면서 두 방식의 장단점을 모두 경험해볼 수 있었습니다.",
           "- CDK 작업 중 프로덕션 환경의 특정 리소스를 날려버리는 장애를 경험해보았고, 이후 Cloudformation stack과 중요 리소스들에는 termination protection을 걸어두었습니다.",
+        ],
+      },
+      {
+        logo: logo("terraform.svg"),
+        headText: "Terraform & Terragrunt",
+        descriptions: [
+          "- 래티스에서 콘솔로만 관리되던 전사 인프라의 형상 관리 체계를 만들기 위해 Terraform을 도입하였습니다. 리소스들을 코드로 옮기면서 리뷰 가능하고 재현 가능한 인프라 관리 체계를 구축했습니다.",
+          "- 피클플러스에서는 Terraform과 함께 Terragrunt를 도입해 환경별 구성을 중복 없이 관리하고 있습니다. 수동으로 관리되던 인프라를 점진적으로 코드화하면서, 인프라 변경이 코드 리뷰를 거치는 지속가능한 관리 체계로 전환하였습니다.",
+          "- 에이슬립에서 AWS CDK를 사용했던 경험이 있어, 프로그래밍 언어 방식(CDK)과 선언형 방식(Terraform)의 장단점을 모두 경험해볼 수 있었습니다.",
         ],
       },
       {
@@ -219,6 +228,15 @@ export const skillContent: Localized<SkillSectionContent> = {
         ],
       },
       {
+        logo: logo("claude.svg"),
+        headText: "Claude & AI 엔지니어링",
+        descriptions: [
+          "- 피클플러스에서 개발 조직의 AI 도입을 리딩하였습니다. Claude 활용을 위한 공통 하네스를 구축하고 온보딩 가이드를 배포해 팀의 AI 활용역량을 평준화하였고, AI 코드 리뷰 도구(CodeRabbit)를 도입해 PR 퀄리티 향상과 리뷰 부담 완화를 이끌었습니다.",
+          "- Claude 도입을 통해 QA 테스트 자동화 구축을 견인하였고, FE/BE 배포 시 QA 테스트가 자동으로 트리거되도록 파이프라인 연동을 지원했습니다. 또한 Claude Tag 기능을 도입해 슬랙 채널에서 운영 배포 전 SQL 검토를 진행하고, BigQuery와 GitHub 연동을 통한 데이터 분석 체계를 구축했습니다.",
+          "- 실무에서도 적극 활용합니다. 수백 개에 달하는 API Swagger 및 Postman 컬렉션을 Claude를 활용해 1주일 만에 자동 정비하고 최신화한 경험이 있습니다.",
+        ],
+      },
+      {
         logo: logo("python.svg"),
         headText: "Python",
         descriptions: [
@@ -245,7 +263,7 @@ export const skillContent: Localized<SkillSectionContent> = {
         headText: "Flutter",
         descriptions: [
           "- 7월 중순까지 올어스(ALLUS)라는 스트릿댄스 플랫폼 앱을 1인 개발로 만들었는데, 네이티브 개발에 Flutter를 채택하여 사용했습니다. Riverpod, Retrofit, SocketIO, Google Admob, Kakao login, Apple login, build runner, updater 등의 모듈을 활용하였고, 앱 기획, 프로젝트 구조 구성, 기능 개발, 스토어 등록 및 배포, 테스팅 등 서비스 전 사이클에 걸쳐 모든 부분을 진행하였습니다.",
-          "- 구글 플레이, 애플 앱스토어에 모두 런칭된 상태이고 현재 지속적으로 운영하고 있습니다.",
+          "- 구글 플레이, 애플 앱스토어에 모두 정식 런칭하여 운영하였고, 현재는 서비스를 종료한 상태입니다.",
         ],
       },
       {
@@ -271,6 +289,16 @@ export const skillContent: Localized<SkillSectionContent> = {
         descriptions: [
           "- 테이블 및 인덱스 설계, DB 파라미터 설정, 쿼리 작성 및 실행 계획 분석, 트랜잭션 관리, Online DDL, 마이그레이션, DB 운영 등을 경험해보았습니다.",
           "- 클러스터드 인덱스와 인덱스의 구조에 대해 인지하고 있고, 인덱스와 정규화와 비정규화의 트레이드 오프에 대해서도 인지하고 있습니다. 기본적인 MySQL의 자료형에 대해 알고 있고, 관계형 데이터베이스의 특징에 대해 알고 있으며, SQL 문을 작성하고 해석할 수 있습니다",
+        ],
+      },
+      {
+        logo: logo("postgresql.svg"),
+        headText: "PostgreSQL",
+        descriptions: [
+          "- 래티스(TypeORM), 페어리테크(DrizzleORM), 피클플러스까지 세 회사 연속으로 Postgres를 프로덕션 환경에서 운영하였습니다. 실행 계획 분석을 통한 인덱스 설계, N+1 쿼리 개선, 비효율적인 조인 개선 등으로 10초 이상 걸리던 API를 95~99% 개선한 경험이 있습니다.",
+          "- 피클플러스에서 Postgres 13 EoL 대응을 위해 Blue/Green 배포 방식으로 Postgres 16 메이저 업그레이드를 수행하였습니다. 또한 Datadog DBM을 Reader DB와 연동해 실시간 쿼리 성능과 부하에 대한 가시성을 확보했습니다.",
+          "- 데이터베이스 변경의 안전성을 중요하게 생각합니다. 분산 서버 환경의 스키마 형상 관리를 위해 플랫폼 독립적인 Flyway 도입을 결정하였고, 페어리테크에서는 프로덕션의 자동 DDL 마이그레이션을 제거하고 배포자가 쿼리를 점검하고 플랜을 세워 배포하는 프로세스로 전환하였습니다.",
+          "- 오랜 MySQL 운영 경험이 있어 두 데이터베이스의 특징을 비교하며 이해하고 있습니다.",
         ],
       },
       {
@@ -302,6 +330,15 @@ export const skillContent: Localized<SkillSectionContent> = {
         headText: "Jenkins",
         descriptions: [
           "- 주기적으로 돌아가야 하는 배치 프로그램을 중앙 집중 관리하고 운영하기 위해 Jenkins를 직접 구축하고 사용해보았습니다. 기본적으로는 crontab과 비슷하게 사용하면 되어서 어렵지 않았고, 배치의 실행 히스토리가 기록되기 때문에, 언제 배치가 실행되었고, 실패 시 어떤 로그가 떴는지 확인할 수 있어 매우 편리했습니다.",
+        ],
+      },
+      {
+        logo: logo("datadog.svg"),
+        headText: "Datadog",
+        descriptions: [
+          "- 에이슬립에서 Prometheus·Grafana로 구축했던 모니터링 시스템을 Datadog으로 마이그레이션하고 대시보드를 구축하였습니다. 상황에 따라 CloudWatch Logs에 subscription filter를 적용해 Datadog으로 로그를 포워딩하는 구성도 진행했습니다.",
+          "- 피클플러스에서 Datadog DBM(Database Monitoring)을 Reader DB와 연동해 실시간 쿼리 성능 및 DB 부하 가시성을 확보하였고, 인프라 핵심 지표들을 모니터 항목으로 추가해 장애 감지 성능을 향상시켰습니다.",
+          "- 페어리테크와 피클플러스에서 Datadog 비용 관리도 수행하였습니다. log retention period 조정, 전혀 사용하지 않는데 계약되어 있던 기능 해지 등으로 비용을 절감한 경험이 있습니다.",
         ],
       },
       {
@@ -599,8 +636,17 @@ export const skillContent: Localized<SkillSectionContent> = {
         logo: logo("aws-cdk.svg"),
         headText: "AWS CDK",
         descriptions: [
-          "- At my previous company I worked only via the web console, but at Asleep I built and managed the entire infrastructure via IaC (Infra as Code). I managed cloud resources holistically by dividing them into multiple stacks, and by injecting external environment variables, I could manage the dev, production, and QA environments from a single codebase. I hadn't used the declarative approach of Terraform, but being able to grasp the entire infrastructure and continuously manage its configuration using a programming language like Python meant a small team could manage large infrastructure relatively efficiently.",
+          "- At my previous company I worked only via the web console, but at Asleep I built and managed the entire infrastructure via IaC (Infra as Code). I managed cloud resources holistically by dividing them into multiple stacks, and by injecting external environment variables, I could manage the dev, production, and QA environments from a single codebase. Being able to grasp the entire infrastructure and continuously manage its configuration using a programming language like Python meant a small team could manage large infrastructure relatively efficiently. Later, using the declarative approach of Terraform at Lattice and Pickle Plus, I got to experience the pros and cons of both styles.",
           "- I once experienced an outage during CDK work where I wiped out a specific resource in the production environment, and afterward I applied termination protection to the CloudFormation stack and important resources.",
+        ],
+      },
+      {
+        logo: logo("terraform.svg"),
+        headText: "Terraform & Terragrunt",
+        descriptions: [
+          "- At Lattice, I introduced Terraform to establish configuration management for company-wide infrastructure that had been managed only through the console. By moving resources into code, I built a reviewable and reproducible infrastructure management scheme.",
+          "- At Pickle Plus, I introduced Terragrunt alongside Terraform to manage per-environment configuration without duplication. While gradually codifying manually managed infrastructure, I shifted to a sustainable scheme where infrastructure changes go through code review.",
+          "- Having used AWS CDK at Asleep, I've experienced the pros and cons of both the programming-language approach (CDK) and the declarative approach (Terraform).",
         ],
       },
       {
@@ -630,6 +676,15 @@ export const skillContent: Localized<SkillSectionContent> = {
         ],
       },
       {
+        logo: logo("claude.svg"),
+        headText: "Claude & AI Engineering",
+        descriptions: [
+          "- At Pickle Plus, I led AI adoption across the engineering org. I built a shared harness for using Claude and distributed an onboarding guide to level up the team's AI proficiency, and introduced an AI code review tool (CodeRabbit) to improve PR quality and reduce review burden.",
+          "- I drove the build-out of QA test automation through Claude and supported pipeline integration so QA tests trigger automatically on FE/BE deployments. I also introduced the Claude Tag feature to review SQL in Slack channels before production deploys, and built a data-analysis workflow via BigQuery and GitHub integration.",
+          "- I use it actively in my own work as well — for example, using Claude to automatically clean up and update hundreds of API Swagger and Postman collections within a week.",
+        ],
+      },
+      {
         logo: logo("python.svg"),
         headText: "Python",
         descriptions: [
@@ -656,7 +711,7 @@ export const skillContent: Localized<SkillSectionContent> = {
         headText: "Flutter",
         descriptions: [
           "- Until mid-July I single-handedly developed a street dance platform app called ALLUS, adopting Flutter for native development. I used modules such as Riverpod, Retrofit, SocketIO, Google AdMob, Kakao login, Apple login, build_runner, and updater, and handled every part across the full service cycle including app planning, project structure, feature development, store registration and deployment, and testing.",
-          "- It's launched on both Google Play and the Apple App Store and I currently operate it continuously.",
+          "- I launched and operated it on both Google Play and the Apple App Store; the service has since been discontinued.",
         ],
       },
       {
@@ -682,6 +737,16 @@ export const skillContent: Localized<SkillSectionContent> = {
         descriptions: [
           "- I've experienced table and index design, DB parameter configuration, query writing and execution-plan analysis, transaction management, Online DDL, migration, DB operation, and more.",
           "- I'm aware of clustered indexes and index structures, and aware of the trade-offs between indexes and normalization/denormalization. I know basic MySQL data types, know the characteristics of relational databases, and can write and interpret SQL statements.",
+        ],
+      },
+      {
+        logo: logo("postgresql.svg"),
+        headText: "PostgreSQL",
+        descriptions: [
+          "- I've operated Postgres in production at three companies in a row: Lattice (TypeORM), FairyTech (DrizzleORM), and Pickle Plus. I have experience improving APIs that took over 10 seconds by 95–99% through execution-plan-based index design, N+1 query fixes, and improving inefficient joins.",
+          "- At Pickle Plus, I performed a major upgrade from Postgres 13 to 16 using Blue/Green deployment to address the Postgres 13 EoL. I also integrated Datadog DBM with the reader DB to gain real-time visibility into query performance and load.",
+          "- I take database-change safety seriously. I decided to adopt the platform-independent Flyway for schema versioning in a distributed server environment, and at FairyTech I removed automatic production DDL migrations in favor of a process where the deployer reviews queries and plans the deployment.",
+          "- With long experience operating MySQL, I understand the characteristics of both databases comparatively.",
         ],
       },
       {
@@ -713,6 +778,15 @@ export const skillContent: Localized<SkillSectionContent> = {
         headText: "Jenkins",
         descriptions: [
           "- I built and used Jenkins myself to centrally manage and operate batch programs that need to run periodically. It was basically easy since you use it similarly to crontab, and since batch execution history is recorded, it was very convenient to check when a batch ran and what logs appeared on failure.",
+        ],
+      },
+      {
+        logo: logo("datadog.svg"),
+        headText: "Datadog",
+        descriptions: [
+          "- At Asleep, I migrated the monitoring system originally built with Prometheus and Grafana to Datadog and built dashboards. Depending on the situation, I also applied subscription filters to CloudWatch Logs to forward logs to Datadog.",
+          "- At Pickle Plus, I integrated Datadog DBM (Database Monitoring) with the reader DB to gain real-time visibility into query performance and DB load, and added key infrastructure metrics as monitors to improve incident detection.",
+          "- I've also managed Datadog costs at FairyTech and Pickle Plus — saving money by adjusting log retention periods and canceling contracted-but-unused features.",
         ],
       },
       {

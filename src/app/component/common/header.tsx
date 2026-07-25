@@ -1,8 +1,9 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { menus } from "@/i18n/content/ui";
+import { menus, resumeMenu } from "@/i18n/content/ui";
 
 export default function Header(){
     const [isVisible, setIsVisible] = useState(false);
@@ -22,7 +23,7 @@ export default function Header(){
     }
 
     return (
-        <header className="flex flex-col sticky top-0 bg-black text-lg h-auto z-30">
+        <header className="flex flex-col sticky top-0 bg-black text-lg h-auto z-30 print:hidden">
             <div className="flex justify-end items-center text-white">
                 <button
                     className="px-3 py-1 mr-1 text-sm border border-white rounded md:absolute md:right-6 md:top-1/2 md:-translate-y-1/2 md:mr-0 md:z-10"
@@ -53,12 +54,21 @@ export default function Header(){
                     {
                         menus.map((menu) => (
                             <li key={menu.id} className="px-5">
-                                <a href={`#${menu.id}`} onClick={() => menuClicked(menu.id)}>
+                                <a href={`/#${menu.id}`} onClick={() => menuClicked(menu.id)}>
                                     {menu.name[lang]}
                                 </a>
                             </li>
                         ))
                     }
+                    <li className="px-5">
+                        <Link
+                            href="/resume"
+                            className="font-semibold text-yellow-300"
+                            onClick={() => setToggleMobileHeader(false)}
+                        >
+                            {resumeMenu.name[lang]}
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

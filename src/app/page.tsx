@@ -13,15 +13,15 @@ import SkillPage from "@/skill/page";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-between px-5 md:px-20 lg:px-20">
-      <EducationPage />
       <CareerPage />
       <ProjectPage />
       <PrizePage />
-      <LanguagePage />
+      <EducationPage />
       <CertificatePage />
       <WritingPage />
       <ThesisPage />
       <PatentPage />
+      <LanguagePage />
       <HobbyPage />
       <SkillPage />
     </main>

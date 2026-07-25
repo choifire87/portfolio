@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import LinkedInIcon from "@/component/icon/linkedinIcon";
 import GithubIcon from "@/component/icon/githubIcon";
 import YoutubeIcon from "@/component/icon/yotubeIcon";
@@ -10,8 +11,13 @@ import { jumboTron } from "@/i18n/content/ui";
 
 export default function JumboTron(){
     const { lang } = useLanguage();
+    const pathname = usePathname();
+
+    // 이력서 페이지는 자체 헤더를 가지므로 점보트론을 표시하지 않는다.
+    if (pathname === "/resume") return null;
+
     return (
-        <section className="flex bg-white dark:bg-gray-900">
+        <section className="flex bg-white dark:bg-gray-900 print:hidden">
             <div className="flex flex-row py-8 px-8 mx-auto max-w-screen-xl text-center">
                 <Image src="/profile.jpg" className="rounded-[3rem]" alt="사진" width={150} height={400}/>
                 <div className="flex flex-col items-start pl-6 sm:pl-6 md:pl-14 lg:pl-20 pt-2">
